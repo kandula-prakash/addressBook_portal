@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address Book System</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../addressBook.css" />
+
+    <!-- External Javascript -->
+    <script defer src="../siteProperties.js"></script>
+    <script defer src="../addressBook.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-content header">
+      <div class="logo-content" onclick="location.href='./addressBook.html'">
+        <img src="../assets/addressbook.png" alt="Logo" />
+        <div class="logo-txt">
+          <span class="address-text">Address</span><br />
+          <span class="book-text">Book</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Page header -->
+    <div class="main-content">
+      <div class="header-content sub-main-content">
+        <div class="person-detail-text">
+          Contact Details
+          <!-- Count -->
+          <div class="person-count">0</div>
+        </div>
+        <!-- Button -->
+        <a href="./addperson.html" class="add-button button"> Add Person </a>
+      </div>
+
+      <!-- Table -->
+      <div class="table-main">
+        <table class="table" id="display"></table>
+      </div>
+    </div>
+  </body>
+</html>
